@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "redshift_fast_api"
+version = "0.1.0"
+description = ""
+authors = ["Gavin Lin <gavinjwl@amazon.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.75.1"
+uvicorn = "^0.17.6"
+redshift-connector = "^2.0.905"
+boto3 = "^1.21.39"
+sqlalchemy-redshift = "^0.8.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+pytest-mock-resources = "^2.2.7"
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
